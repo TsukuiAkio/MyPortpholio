@@ -1,0 +1,87 @@
+@import "./style-color";
+@import './opmenu-container';
+
+
+
+
+.mobile-menu {
+    // 裏に隠れたメニューの位置サイズ
+    position: fixed;
+    right: 0;
+    top: 60px;
+    width: 250px;
+
+    &__btn {
+        // メニュー用ボタンの外見の指定
+        background-color: unset;
+        border: none;
+        outline: none !important;
+        cursor: pointer;
+    
+        & > span {
+            // バーガーメニュー用の外見の指定
+            background-color: $cMenuClose;
+            width: 35px;
+            height: 2px;
+            display: block;
+            margin-bottom: 9px;
+            transition: transform 0.7s;
+    
+            &:last-child {
+                // 三本目の下のmarginはいらない
+                margin-bottom: 0;
+            }
+        }
+    }
+    &__cover {
+        // バーガーメニュー開いた後の閉じる範囲の拡大用のdivの指定
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        // 普段隠れている
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 1s;
+        cursor: pointer;
+    }
+    &__main {
+        // 裏のメニューの大枠
+        padding: 0;
+        // ３D的アニメーションの指定
+        perspective: 2000px;
+        transform-style: preserve-3d;
+    }
+    &__item {
+        // liの指定
+        display: block;
+        list-style: none;
+        padding: 0 40px;
+        // 奥行の指定
+        transform: translate3d(0, 0, -1000px);
+        transition: transform 0.3s, opacity 0.2s;
+        // 最初は見えない
+        opacity: 0;
+    }
+    &__link {
+        // aの指定
+        display: block;
+        margin-top: 30px;
+        color: $cBlack;
+        text-decoration: none;
+    }
+}
+
+.menu-open {
+    & #container {
+        @include op-container(
+            $Y: 0
+        );
+    }
+    @include op-mixin();
+}
+
+
+

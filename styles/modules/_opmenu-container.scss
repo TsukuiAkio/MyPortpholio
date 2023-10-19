@@ -1,0 +1,49 @@
+@mixin op-container(
+    $X:-250px,
+    $Y:60px
+) {
+     // 裏のメニューのサイズ分-300px
+    transform: translate($X, $Y);
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+}
+
+@mixin op-mixin {
+    & .mobile-menu {
+        &__cover {
+            // 閉じる範囲の拡大用のdivが表に出る
+            opacity: 1;
+            visibility: visible;
+            z-index: 11;
+        }
+        &__item {
+            // liが見えるように
+            transform: none;
+            opacity: 1;
+
+            // ループで上から順の演出遅延の指定
+            @for $i from 1 through 5 {
+                &:nth-child(#{$i}) {
+                    transition-delay: $i * 0.07s;
+                }
+            }
+        }
+        &__btn {
+            & > span {
+                background-color: $cMenuOpen;
+                // バーガーメニューの☓印への変化の指定
+                &:nth-child(1) {
+                    transition-delay: 70ms;
+                    transform: translateY(11px) rotate(135deg);
+                }
+                &:nth-child(2) {
+                    transition-delay: 0s;
+                    transform:  translateX(-18px) scaleX(0);
+                }
+                &:nth-child(3) {
+                    transition-delay: 140ms;
+                    transform: translateY(-11px) rotate(-135deg);
+                }
+            }
+        }
+    }
+}

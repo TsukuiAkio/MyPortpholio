@@ -1,0 +1,36 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.bgCircle1 {
+    height: 300px;
+    width: 300px;
+}
+.bgCircle2 {
+    height: 400px;
+    width: 400px;
+}
+.box1Trans {
+    transform: translate(0px, 10px);
+}
+.menu-bs {
+    box-shadow: 3px 3px 20px 5px rgba($cBlack, 0.6);
+}
+#title-content {
+    & .hero-text {
+        width: 250px;
+        height: 220px;
+        padding: 20px;
+    }
+}
+#product-content {
+    & .product-container {
+        margin-top: 60px;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+    }
+}
+
+

@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css" />
+    <script src="https://kit.fontawesome.com/885c2710d5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Poiret+One&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="global-container">
+        <div id="container">
+
+            <!-- Modal HTML-->
+            <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+                <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                    <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">HTML</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            基本的な記述について学習してますが、SEOの記述についてはわからないです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal CSS-->
+        <div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                class="modal__container"
+                role="dialog"
+                aria-modal="true"
+                aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">CSS(Sass)</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            SCSSの記述含め基本的な記述は押さえているつもりです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal JS-->
+        <div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">JavaScript</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            奥深くて実用的な範囲でわかる部分しか理解できてないです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal React-->
+        <div class="modal micromodal-slide" id="modal-4" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">React</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            JavaScriptのDOM操作の理解のために始めました。やってみると面白いのでもっと知りたいと思ってます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Gatsby-->
+        <div class="modal micromodal-slide" id="modal-5" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">Gatsby</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            React学習からの派生でSPAのサイト作りに興味持ったため公式のチュートリアルを触ってみた程度です。関心はあります。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Photoshop-->
+        <div class="modal micromodal-slide" id="modal-6" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">Photoshop</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            画像の編集に欠かせないと思っています、調べればやりたいことできる程度です。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Illustrator-->
+        <div class="modal micromodal-slide" id="modal-7" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">Illustrator</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            仕事のPOP作りに使用していました、photoshopと併せて使ってます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal Adobe XD-->
+        <div class="modal micromodal-slide" id="modal-8" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">Adobe XD</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            調べながらなら使えます。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <!-- Modal Git-->
+                <div class="modal micromodal-slide" id="modal-9" aria-hidden="true">
+                    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                        <div
+                            class="modal__container"
+                            role="dialog"
+                            aria-modal="true"
+                            aria-labelledby="modal-1-title"
+                            >
+                            <header class="modal__header">
+                                <h2 class="modal__title" id="modal-1-title">Git</h2>
+                                <button
+                                class="modal__close"
+                                aria-label="Close modal"
+                                data-micromodal-close
+                                ></button>
+                            </header>
+                            <div class="modal__content" id="modal-9-content">
+                                <!-- /.modal__txt -->
+                                <p class="modal__txt">
+                                    gitに保存等で使用できます。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- work 1 -->
+        <div class="modal micromodal-slide" id="modal-10" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">Work</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            爆カジ様の「インターカジノ」の記事をwordpressで執筆をさせて頂きました。<br>
+                            使用したもの：Photoshop Illustrator<br>
+                            作業時間：12時間ほど<br>
+                            Point:情報の正誤の確認と手順のための画像編集などに時間をかけました。<br>
+                            またサイトの特徴や魅力を伝えることに尽力しました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- work 2 -->
+        <div class="modal micromodal-slide" id="modal-11" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">Work</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            爆カジ様二回目の「ギャンボラカジノ」の記事をwordpressで執筆をさせて頂きました。<br>
+                            使用したもの：Photoshop Illustrator<br>
+                            作業時間：10時間ほど<br>
+                            Point:前回の経験ありますが、情報の正誤の確認と手順のための画像編集などに時間をかけました。<br>
+                            他のサイトにない特徴を持っていましたので、その点を特に伝えるべく書きました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- self-mades 1 -->
+        <div class="modal micromodal-slide" id="modal-12" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">self-made 制作物</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            仕事でデザートのPOP制作のために作成、Illustratorのみで作ったのがこだわりです。<br>
+                            使用したもの：Illustrator<br>
+                            作業時間：2時間ほど<br>
+                            商品写真使ったほうが美味しそうで良かったのではないかと思ってます。<br>
+                            余談ですが、粉砂糖を演出するのに大量の点を付けたらパソコンがフリーズしました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- self-mades 2 -->
+        <div class="modal micromodal-slide" id="modal-13" aria-hidden="true">
+            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+                <div
+                    class="modal__container"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-1-title"
+                    >
+                    <header class="modal__header">
+                        <h2 class="modal__title" id="modal-1-title">self-made 制作物</h2>
+                        <button
+                        class="modal__close"
+                        aria-label="Close modal"
+                        data-micromodal-close
+                        ></button>
+                    </header>
+                    <div class="modal__content" id="modal-1-content">
+                        <!-- /.modal__txt -->
+                        <p class="modal__txt">
+                            こちらも仕事のデザートPOP制作したものです。前回の反省を生かして商品画像を用意して無難に作成しました。<br>
+                            使用したもの：Photoshop Illustrator<br>
+                            作業時間：30分ほど<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <!-- モバイル用上に戻るボタン -->
+            <div class="mobile-btnup" id="scroll-up"></div>
+            <!-- モバイル用の裏のメニューを開いた後閉じる範囲を拡大する -->
+            <div class="mobile-menu__cover"></div>
+            <!-- ヘッダー -->
+            <header class="header">
+                <div class="page-title">
+                    <img src="./image/logo-name.png" alt="タイトルロゴ">
+                </div>
+                <!-- バーガーメニュー -->
+                <div class="mobile-menu__container">
+                    <button class="mobile-menu__btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="header-pcmenu">
+                    <div class="header-pcmenu__container">
+                        <div class="header-pcmenu__item btn slide-bg">
+                            <a href="#skill-content">プログラム</a>
+                        </div>
+                        <div class="header-pcmenu__item btn slide-bg">
+                            <a href="#product-content">制作物</a>
+                        </div>
+                        <div class="header-pcmenu__item btn slide-bg">
+                            <a href="#self-introduction-content">自己紹介</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section id="title-content" class="main-contents point">
+                <h2 class="tween-animate-title">Welcome to my portfolio</h2>
+                <div class="hero-text">
+                    <div class="svgall">
+                        <svg class="mask" viewBox="0 0 160.63 210.78" id="move">
+                          <defs>
+                            <!-- アニメーション画像 -->
+                            <mask id="clipMask">
+                              <!--マスクのpath-->
+                              <path id="c-c" class="cls-1" d="M50.01,7.25c-2.47-1.81-6.55-4.22-12-5-4.96-.71-8.84,.23-12,1-2.33,.57-5.94,1.48-10,4-1.77,1.1-4.48,2.81-7,6-.86,1.09-4.12,5.4-5,12-.25,1.85-.76,6.09,1,11,1.28,3.55,3.15,5.79,5,8,1.6,1.92,3.97,4.69,8,7,.89,.51,3.81,2.11,8,3,5.41,1.15,9.72,.41,12,0,4.7-.84,8.42-2.53,11-4"/>
+                              <path id="c-r" class="cls-2" d="M57.51,24.75c0,1.46,0,3.46,0,5.84-.02,11.69-.12,16.15,0,16.16,.31,.01,1.68-14.78,1-17-.04-.13-.2-.58,0-1,.26-.55,.94-.6,2-1,.92-.34,.66-.4,2-1,1.08-.49,1.89-.84,3-1,.62-.09,1.22-.18,2,0,.99,.23,1.67,.75,2,1,.46,.36,.79,.73,1,1"/>
+                              <path id="c-e1" class="cls-2" d="M76.51,41.75c9.25-9.15,13.45-12.54,15.2-13.31,.17-.08,.79-.33,.8-.69,0-1.15-6.52-1.94-7-2-2.26-.27-3.42-.39-5,0-1.91,.47-3.19,1.4-4,2-1.37,1.01-3.3,2.44-4,5-.49,1.77-.16,3.29,0,4,.42,1.85,1.31,3.06,2,4,.51,.69,1.49,2.01,3,3,3.51,2.29,7.71,1.3,9,1,3.58-.84,5.92-2.9,7-4"/>
+                              <path id="c-a" class="cls-2" d="M119.51,33.75c-.1-.27-2.52-6.82-9-8-.29-.05-5.97-1-10,3-.64,.64-2.64,2.68-3,6-.39,3.62,1.43,6.25,2,7,2.42,3.2,6.48,4.48,10,4,3.91-.53,6.27-3.17,7-4,.44-.5,2.32-2.68,3-6,.39-1.9,.05-2.54,0-9-.01-1.32,0-1.68,0-3v22"/>
+                              <path id="c-t" class="cls-2" d="M134.51,25.75h-8v-9.2c.12,14.17,.09,19.99,0,21.2,0,.1-.04,.49,0,1,.11,1.42,.69,2.5,1,3,1.35,2.18,3.58,2.88,4,3,1.79,.52,3.32,.19,4,0"/>
+                              <path id="c-e2" class="cls-2" d="M141.51,42.75c1.58-1.71,2.98-3.06,4-4,2.04-1.89,3.64-3.36,6-5,1.37-.95,2.65-2.02,4-3,1.44-1.05,1.97-1.41,2-2,.06-1.36-2.61-2.55-4-3-3.17-1.03-6.04-.29-7,0-1.18,.36-6.66,2.01-8,7-.84,3.11,.38,5.87,1,7,1.33,2.44,3.31,3.6,4,4,3.78,2.16,7.66,1.3,9,1,.88-.2,3.56-.83,6-3,.43-.39,.77-.74,1-1"/>
+                              <path id="a-a" class="cls-2" d="M23.51,118.75c-.49-.67-4.5-6.01-11-6-.92,0-4.9,0-8,3-.67,.65-2.8,2.71-3,6-.19,3.13,1.49,5.35,2,6,1.34,1.71,2.9,2.48,4,3,1.44,.68,4.93,2.34,9,1,.54-.18,4.2-1.45,6-5,.47-.93,.83-2.02,1-7,.08-2.21,.11-4.91,0-8v21"/>
+                              <path id="a-n" class="cls-2" d="M31.51,111.75c.34,16.39,.23,20.99,0,21-.28,.01-.91-6.75,1-13,.48-1.56,1.23-3.47,3-5,1.6-1.38,3.33-1.83,4-2,2.13-.53,3.94-.26,5,0,1.12,.28,2.7,.67,4,2,1.41,1.44,1.71,3.19,2,5,.37,2.3,.15,3.78,0,6-.12,1.87-.21,4.6,0,8"/>
+                              <path id="a-d" class="cls-2" d="M78.51,118.75c-2.54-3.91-6.74-6.28-11-6-4.36,.29-7.26,3.24-8,4-1.17,1.2-2.67,2.73-3,5-.58,4.04,2.95,8.33,7,10,4.24,1.75,9.03,.61,12-2,2.26-1.99,3.22-4.62,4-9,1.98-11.15,.71-22.04,0-22-.59,.04-.86,7.62,0,35"/>
+                              <path id="d-d" class="cls-1" d="M7.01,153.25c.48,0,1.17-.01,2,0,3.19,.05,8.7,.15,14,2,2.18,.76,6.63,2.31,10.5,6.5,4.47,4.83,5.51,10.28,6,13,1.22,6.82-.39,12.2-1,14-2.16,6.37-6.04,10.14-8,12-1.7,1.62-4.52,4.24-9,6-4.46,1.75-8.69,1.91-11,2-1.25,.05-2.28,.03-3,0v-55l.5-2.5"/>
+                              <path id="d-e" class="cls-2" d="M51.51,194.75c5.31-4.5,10.62-9.01,15.93-13.51,.01-.05,.05-.23,0-.44-.52-2.39-10.78-4.65-15.93-.05-2.34,2.09-3,5-3,5-.11,.49-.42,2.05,0,4,.69,3.19,2.84,5.15,4,6,2.06,1.52,4.1,1.86,5,2,1.08,.17,4.07,.48,7-1,1.74-.88,3.21-2.26,4-3,.43-.4,.77-.75,1-1"/>
+                              <path id="d-s" class="cls-2" d="M84.51,179.75c-.23-.23-2.71-2.66-6-2-1.53,.31-3.83,1.4-4,3-.25,2.29,3.94,4.81,6,6,1.47,.85,2.18,1,3,2,1.11,1.36,2.05,3.83,1,6-1.24,2.57-4.37,2.93-5,3-4.57,.52-7.77-3.69-8-4"/>
+                              <path id="d-i" class="cls-2" d="M92.51,172.75c.5,.44,1.05,.93,1,1-.03,.04-.33-.13-.42-.18-.2-.12-1.74-1.02-1.58-1.82,0,0,.03-.16,1-1h0c.16-.06,.74-.26,1,0,.23,.23,.09,.68,0,1-.82,2.84-.97,3.78-1,4-.02,.17,0,.11,0,2v23"/>
+                              <path id="d-g" class="cls-2" d="M121.51,184.75c-.49-.91-2.57-4.58-7-6-.99-.32-3.81-1.18-7,0-2.81,1.03-4.32,3.05-5,4-.76,1.05-1.94,2.68-2,5-.04,1.71,.54,2.99,1,4,.4,.88,1.2,2.59,3,4,1.91,1.5,3.89,1.83,5,2,1.02,.16,5.18,.72,9-2,2.37-1.69,3.51-3.86,4-5l.3-12.81c-.08,9.31-.11,16.15,0,19.31,.01,.36,.05,1.32-.3,2.5-.83,2.82-3.14,4.41-4,5-1.07,.73-3.17,1.91-6,2-2.16,.07-3.76-.52-5-1-2.64-1.01-4.62-2.58-6-4"/>
+                              <path id="d-n" class="cls-2" d="M130.51,177.75c.65,17.31,.38,20.97,0,21-.64,.05-3.31-10.23,1-16,2-2.67,5-4,5-4,.99-.44,2.71-1.18,5-1,.82,.06,3.24,.25,5,2,.37,.37,1.17,1.27,2,5,.36,1.63,.9,4.58,1,11,.03,1.68,.01,3.07,0,4"/>
+                            </mask>
+                          </defs>
+                          <!-- ベース画像 -->
+                          <image xlink:href="./image/create.svg" width="100%" height="100%" mask="url(#clipMask)"></image>
+                        </svg>
+                    
+                      </div>
+                </div>
+                <!-- モバイル用の背景装飾表示 -->
+                <div class="bg-square-right"></div>
+
+                <!-- 共通 -->
+                <div class="chara-container">
+                    <div class="chara-container__bg-silhouette">
+                        <img src="./image/my-silhouette1.png" alt="背景に製作者のシルエット">
+                    </div>
+                </div>
+                <!-- PC用の背景装飾表示 -->
+            </section>
+            <section id="skill-content" class="main-contents point">
+                <div class="bg-slide">
+                    <span class="bg-slide__item"></span>
+                </div>
+                <div class="bg-slide2">
+                    <span class="bg-slide2__item"></span>
+                </div>
+                <!-- 出来ること一覧 -->
+                <h2 class="tween-animate-title">My Program Skill</h2>
+                <div class="skill-contents">
+                    <div class="skill-contents__item">
+                        <div class="skill-wrap">
+                            <div class="skill-evaluation">
+                                <p class="skill-evaluation__title">評価基準</p>
+                                <p>☆：学習で少し触れたことがある</p>
+                                <p>☆☆：ある程度の理解がある</p>
+                                <p>☆☆☆：一応調べればやりたいことができる</p>
+                                <p><span class="skill-evaluation__announce"><i class="fa fa-commenting-o"></i>クリックで</span>コメントをご覧いただけます</p>
+                            </div>
+                            <div class="box1">
+                                <p class="textConsept">I'm Program learning</p>
+                            </div>
+                        </div>
+                        <div class="skill-list">
+                            <table>
+                                <tr>
+                                    <th>
+                                        <img class="program-logo" src="./image/html_icon.png" alt="HTMLロゴ">
+                                    </th>
+                                    <td>HTML</td>
+                                    <td>☆☆☆</td>
+                                    <td>
+                                        <button data-micromodal-trigger="modal-1" class="modal__open">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img class="program-logo" src="./image/css_icon.png" alt="HTMLロゴ">
+                                    </th>
+                                    <td>CSS(SCSS)</td>
+                                    <td>☆☆☆</td>
+                                    <td>
+                                        <button data-micromodal-trigger="modal-2" class="modal__open">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img class="program-logo" src="./image/js_icon.png" alt="HTMLロゴ">
+                                    </th>
+                                    <td>JavaScript</td>
+                                    <td>☆☆☆</td>
+                                    <td>
+                                        <button data-micromodal-trigger="modal-3" class="modal__open">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img class="program-logo" src="./image/react_icon.png" alt="HTMLロゴ">
+                                    </th>
+                                    <td>React</td>
+                                    <td>☆</td>
+                                    <td>
+                                        <button data-micromodal-trigger="modal-4" class="modal__open">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img class="program-logo" src="./image/Gatsby_Monogram.png" alt="HTMLロゴ">
+                                    </th>
+                                    <td>Gatsby</td>
+                                    <td>☆</td>
+                                    <td>
+                                        <button data-micromodal-trigger="modal-5" class="modal__open">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img class="program-logo" src="./image/adobe_photoshop.png" alt="HTMLロゴ">
+                                    </th>
+                                    <td>PhotoShop</td>
+                                    <td>☆☆☆</td>
+                                    <td>
+                                        <button data-micromodal-trigger="modal-6" class="modal__open">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img class="program-logo" src="./image/adobe_illustrator.png" alt="HTMLロゴ">
+                                    </th>
+                                    <td>Illustrator</td>
+                                    <td>☆☆☆</td>
+                                    <td>
+                                        <button data-micromodal-trigger="modal-7" class="modal__open">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img class="program-logo" src="./image/adobe_xd_icon.png" alt="HTMLロゴ">
+                                    </th>
+                                    <td>AdobeXD</td>
+                                    <td>☆☆</td>
+                                    <td>
+                                        <button data-micromodal-trigger="modal-8" class="modal__open">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        <img class="program-logo" src="./image/github_icon.png" alt="HTMLロゴ">
+                                    </th>
+                                    <td>Git</td>
+                                    <td>☆☆</td>
+                                    <td>
+                                        <button data-micromodal-trigger="modal-9" class="modal__open">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="product-content" class="main-contents point">
+                <!-- 制作物の予定 -->
+                <h2 class="tween-animate-title">Product Introduction</h2>
+                <div class="product-title">
+                    <div class="product-title__container">
+                        <p>Works</p>
+                        <i class="fa fa-gear"></i>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-container__item">
+                        <img src="./image/intercasino.png" alt="">
+                        <div class="text-content">
+                            <div class="text-content__box">
+                                <button data-micromodal-trigger="modal-10" class="modal__open color">
+                                    詳細はこちら
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container__item">
+                        <img src="./image/gambolacasino.png" alt="">
+                        <div class="text-content">
+                            <div class="text-content__box">
+                                <button data-micromodal-trigger="modal-11" class="modal__open color">
+                                    詳細はこちら
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-title">
+                    <div class="product-title__container">
+                        <p>Self-mades</p>
+                        <i class="fa fa-gear"></i>
+                    </div>
+                </div>
+                <div class="product-container">
+                    <div class="product-container__item">
+                        <img src="./image/pancake-pop.jpg" alt="">
+                        <div class="text-content">
+                            <div class="text-content__box">
+                                <button data-micromodal-trigger="modal-12" class="modal__open color">
+                                    詳細はこちら
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-container__item">
+                        <img src="./image/terrine-pop.png" alt="">
+                        <div class="text-content">
+                            <div class="text-content__box">
+                                <button data-micromodal-trigger="modal-13" class="modal__open color">
+                                    詳細はこちら
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="self-introduction-content" class="main-contents point">
+                <!-- 自己紹介ページ -->
+                <h2 class="tween-animate-title"> Self-Introduction</h2>
+                <div class="introduction-container">
+                    <div class="introduction-container__photo">
+                        <img src="./image/tsukuiakio.jpg" alt="自画像">
+                    </div>
+                    <div class="introduction-container__textbox">
+                        <h3>自己紹介</h3>
+                        <p>津久井昭夫</p>
+                        <p>1985年2月4日</p>
+                        <p>埼玉県さいたま市在住</p>
+                        <p class="point">略歴</p>
+                        <p>２００３年さいたま市立浦和南高校　卒</p>
+                        <p>バトミントン部に所属、部にとって数年ぶりの県大会出場を果たせました。</p>
+                        <p>２００４年介護系専門学校中退</p>
+                        <p>以降セブンイレブンで時間帯責任者として働き続け、様々人たちと出会ってきました。その経験で良好な人間関係を築くのが得意になりました。
+                        そして転機となるのは数年前、職場で出会った後輩二人に誘われIT系を目指すきっかけとなりました。</p>
+                        <p>そこから独学で学習を続けています,理系の自分にとって挑戦しがいのあるカテゴリーだと思ってます。</p>
+                        <p class="point">趣味</p>
+                        <p>料理、大体作れます</p>
+                        <p>活字読むこと、小説、ライトノベル、ネット小説、なろう系等色々読みます</p>
+                        <p>ソーシャルゲーム、流行りになったものなど触ってみたりします</p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <!-- モバイル用の裏に隠れているメニュー -->
+        <nav class="mobile-menu open">
+            <ul class="mobile-menu__main">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link_1" href="#skill-content">
+                        <span class="main-title">プログラム</span>
+                        <span class="sub-title">Skill</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link_2" href="#product-content">
+                        <span class="main-title">制作物</span>
+                        <span class="sub-title">product</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link link_3" href="#self-introduction-content">
+                        <span class="main-title">自己紹介</span>
+                        <span class="sub-title">self-introduction</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <footer>
+            <p>&copy; Tsukui Akio. 2023.</p> 
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+    <script src="scripts/libs/swiper-setting.js"></script>
+    <script src="scripts/vendors/TweenMax.min.js"></script>
+    <script src="scripts/vendors/scroll-polyfill.js"></script>
+    <script src="scripts/libs/open-menu.js"></script>
+    <script src="scripts/libs/scroll.js"></script>
+    <script src="scripts/libs/text-animation.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
