@@ -979,7 +979,7 @@ a:hover {
 
 #title-content {
   position: relative;
-  background-image: url(../../image/stone_1024☓683.jpg);
+/*   background-image: url(../../image/stone_1024☓683.jpg); */
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
